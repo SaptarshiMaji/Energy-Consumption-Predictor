@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Energy Consumption Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Energy Consumption Prediction</h1>
+    
+    <form id="prediction-form">
+      <label for="temperature">Temperature (°C):</label>
+      <input type="number" id="temperature" name="temperature" required>
+
+      <label for="humidity">Humidity (%):</label>
+      <input type="number" id="humidity" name="humidity" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result" class="result-box">
+      <h2>Prediction:</h2>
+      <p id="prediction-value">-- kWh</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
